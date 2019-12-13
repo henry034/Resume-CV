@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\newcommand{\ts}{\textsuperscript}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{bibentry}
+
+\name{Han-Yun(Henry) Yeh} % Your name
+%\address{123 Broadway \\ City, State 12345} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+\address{henryyeh034@gmail.com}
+\address{linkedin.com/in/henry034/}
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf National Chiao Tung University} \hfill {HsinChu, Taiwan} \hfill {\em Sep. 2016 - Jan. 2019}
+\begin{itemize} \item {M.S. in Communications Engineering (GPA: 4.18/4.3)} \end{itemize}
+{\bf National Taipei University} \hfill {Taipei, Taiwan} \hfill {\em Sep. 2012 - June 2016}
+\begin{itemize} \item {B.S. in Communications Engineering (Rank:1\ts{st}, GPA: )} \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{IBM, Inc}{June 2018 - Oct. 2018}{Application Developer}{Taipei, Taiwan}
+\item Implemented health informaition suggestion project \quad{\footnotesize *Python}
+\item Implemented backend processing for website user behavior statistics \quad{\footnotesize *Python, PHP, MongoDB, MySQL, AWS}
+\end{rSubsection}
+
+\begin{rSubsection}{IBM, Inc}{Jul. 2017 - Aug. 2017}{Application Developer Intern}{Taipei, Taiwan}
+\item Implmented AOI algorithm for defect detection \quad {\footnotesize *Python}
+\end{rSubsection}
+
+\begin{rSubsection}{National Chiao Tung University}{Sep. 2016 - Jan. 2019}{Graduate Research Assistant}{HsinChu, Taiwan}
+\item Master Thesis {\em "End-to-end Pinyin to Character Language Model using Self-Attention Mechanism"}
+\item Dimensional sentiment analysis for Chinese phrases (DSAP) \cite{lee2017nctu}
+\item Implemented Child Speech Imparment Supporting System \quad {\footnotesize *Java}
+\end{rSubsection}
+
+\begin{rSubsection}{National Chiao Tung University}{Sep. 2016 - Jan. 2019}{Teaching Assistant}{HsinChu, Taiwan}
+\item Principle of Microcomputer, Logic Design and Lab
+\end{rSubsection}
+
+\begin{rSubsection}{National Taipei University}{Sep. 2012 - June 2016}{Bachelor Research Assistant}{Taipei, Taiwan}
+\item Mandarin prosody generation \cite{hung2014investigation}\cite{chiang2016improvements}\cite{chiang2019punctuation}
+\end{rSubsection}
+
+\begin{rSubsection}{National Taipei University}{Sep. 2012 - June 2016}{Teaching Assistant}{Taipei, Taiwan}
+\item Physics
+\end{rSubsection}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Hornors and awards SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Hornors and Awards}
+Academic
+\begin{rSubsection}{}{}{}{}
+\item {\bf Phi Tau Phi Award} (2016) - The Phi Tau Phi Scholastic Honor Society, Taipei Taiwan \\
+Award for top-ranked student in CE department among all classes
+\item {\bf Best Paper Award} (2014) - Oriental COCOSDA~\cite{hung2014investigation} - Phuket, Thailand
+\item {\bf Dean's List} (Fall '12, Fall '15) - NTPU CE Dept. - Taipe, Taiwan
+\item {\bf Scholarship} (2014) - Elytone Electronic CO., LTD. - Taipei, Taiwan
+\end{rSubsection}
+
+Problem Solving, Contest
+\begin{rSubsection}{}{}{}{}
+\item {\bf 6\ts{th} Place} (2017) - IJCNLP Shared Task 2~\cite{lee2017nctu} - Taipei, Taiwan
+\item {\bf 1\ts{st} Place} (2015) - NTPU CE Senior Project Competition - Taipei, Taiwan
+\item {\bf Honerable Mention} (2014) - Taiwan National Collegiate Programming Contest - Taipei, Taiwan
+\item {\bf 29\ts{th} Place} (2014) - ACM ICPC Jarkarta Regional - Jarkarta Indonesia
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Other experience
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Other Experience}
+\begin{rSubsection}{NTPU CE Student Association}{Sep. 2012 - June 2016}{Director of Information Management}{Taipei, Taiwan}
+\item Manage student information system
+\end{rSubsection}
+\begin{rSubsection}{CKHS Infor Club}{Sep. 2010 - June 2011}{Vice President}{Taipei, Taiwan}
+\item Senior high school computer science club
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+
+\nobibliography{bib/mybib}
+\bibliographystyle{unsrt}
+
+\begin{enumerate}
+\item \bibentry{hung2014investigation}
+\item \bibentry{chiang2016improvements}
+\item \bibentry{lee2017nctu}
+\item \bibentry{chiang2019punctuation}
+\end{enumerate}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Python, C, Java, PHP \\
+Databases & MySQL, PostgreSQL \\
+Frameworks & TensorFlow
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
