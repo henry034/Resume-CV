@@ -30,7 +30,7 @@
 %\address{123 Broadway \\ City, State 12345} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 %\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
-\address{henryyeh034@gmail.com}
+\address{henryyeh034@gmail.com, +886-922463510}
 \address{github.com/henry034/}
 \begin{document}
 
@@ -55,8 +55,8 @@
     Research
     \begin{rSubsection}{}{}{}{}
     \item {\bf 6\ts{th} Place} (2017) - IJCNLP Shared Task 2~[3] - Taipei, Taiwan
-    \item {\bf Best Paper Award} (2014) - Oriental COCOSDA~[4] - Phuket, Thailand
     \item {\bf 1\ts{st} Place} (2015) - NTPU CE Senior Project Competition - Taipei, Taiwan
+    \item {\bf Best Paper Award} (2014) - Oriental COCOSDA~[4] - Phuket, Thailand
     \end{rSubsection}
     Academic
     \begin{rSubsection}{}{}{}{}
@@ -65,7 +65,6 @@
     \item {\bf Dean's List} (Fall '12, Fall '15) - NTPU CE Dept. - Taipe, Taiwan
     \item {\bf Scholarship} (2014) - Elytone Electronic CO., LTD. - Taipei, Taiwan
     \item {\bf Honerable Mention} (2014) - Taiwan National Collegiate Programming Contest - Taipei, Taiwan
-    %\item {\bf 29\ts{th} Place} (2014) - ACM ICPC Jarkarta Regional - Jarkarta Indonesia
     \end{rSubsection}
     \end{rSection}
 
@@ -74,24 +73,39 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Research Experience}
     \begin{rSubsection}{National Chiao Tung University}{Hsinchu, Taiwan}{Graduate Student/Research Assistant, Speech Processing Lab}{Sep. 2016 - Jan. 2019}
-        \item Research Topic: Chinese pinyin to character language model using deep learning approach ~[1]\\
-        Experimented sequence labeling (TDNN+BLSTM, joint learning with word boundary prediction) and seq2seq (Transformer) model on Chinese pinyin to character problem. 
-        The training data come from text corpus including wikipedia, LDC Chinese Gigaword, Sinica corpus,\dots through high precision rule-based G2P(character to pinyin) system.
-        Reduced character error rate to 5.6\%.
-        \item Dimensional sentiment analysis for Chinese phrases (DSAP)~[3] \\
-        Achieved mean rank 6.5 among 24 submissions on Chinese phrases' valence and arousal prediction problem using proposed order-awared word2vec and BLSTM model on CAVT(Chinese Valence-Arousal Text) corpus.
-        \item Child Speech Impairment Supporting System\\
-        Implemented corpus recording system (for speech impairment child) GUI using Java, in the cooperation project with NTU Hospital Hsinchu. Collected and analyzed about 200 children's sample.
+        \item Research Topic: Chinese pinyin to character language model using deep learning approach ~[1]
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item Experimented sequence labeling (TDNN+BLSTM, joint learning with word boundary prediction) and seq2seq (Transformer) model on Chinese pinyin to character problem. 
+            \item Preprocessed data from text corpus including wikipedia, LDC Chinese Gigaword, Sinica corpus,\dots through high precision CRF-based Chinese parser and rule-based G2P (character to pinyin) system.
+            \item Reduced character error rate to 5.6\%.
+        \end{itemize}\vspace {0.5em}
+        \item Dimensional sentiment analysis for Chinese phrases (DSAP)~[3] 
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item Achieved mean rank 6.5 among 24 submissions on Chinese phrases' valence and arousal prediction problem using proposed order-awared word2vec and BLSTM model on CAVT(Chinese Valence-Arousal Text) corpus.
+        \end{itemize}\vspace {0.5em}
+        \item Child Speech Impairment Supporting System
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item Implemented corpus recording system (for speech impairment child) GUI using Java in the cooperation project with NTU Hospital Hsinchu. Collected and analyzed about 200 children's sample.
+        \end{itemize}\vspace {0.5em}
     \end{rSubsection}
     \begin{rSubsection}{National Taipei University}{Taipei, Taiwan}{Research Assistant, Speech and Multimedia Signal Processing Lab}{Sep. 2012 - June 2016}
-        \item Senior project: {\em "An Automatic Grade Input System via Voice"}\\
-        Constructed speech recognition system including energy-based voice activity detection and beamforming noise cancelation module to enter student's name and score automatically. Obtained 1\ts{st} place in NTPU CE Senior Project Competition.
-        \item Mandarin prosody generation~[2][4]\\
-        Investigated the improvement of CRF-based base-phrase chunk feature and punctuation confidence in Madarin text-to-speech system. 
-        The base-phrase chunk feature is labeled by CRF-based base-phrase chunker 
-        and the punctuation confidence is for each lexical word boundary from inpur text tagged with Chinese word boundary, part of speech (POS) and base-phrase chunk, 
-        measuring the likelihood of inserting a punctuation mark (PM). 
-        These feature are applied in MLP-based prosody generator and the result shows that the RMSE for predicting logF0, syllable duration, energy level and pause duration are all reduced.
+        \item Senior project: {\em "An Automatic Grade Input System via Voice"}
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item Constructed speech recognition system including energy-based voice activity detection and beamforming noise cancellation module to enter student's name and score automatically. Obtained 1\ts{st} place in NTPU CE Senior Project Competition.
+        \end{itemize}\vspace{0.5em}
+        \item Mandarin prosody generation~[2][4]
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item Investigated the improvement of CRF-based base-phrase chunk feature and punctuation confidence in Mandarin text-to-speech system. 
+            \item Labeled base-phrase chunk feature by CRF-based base-phrase chunker. 
+            \item Generated CRF-based punctuation confidence for each lexical word boundary from input text tagged with Chinese word boundary, part of speech (POS) and base-phrase chunk, 
+                  measuring the likelihood of inserting a punctuation mark (PM). 
+            \item Applied above feature in MLP-based prosody generator and confirmed that the RMSE for predicting logF0, syllable duration, energy level and pause duration are all reduced.
+        \end{itemize}\vspace{0.5em}
     \end{rSubsection}
 \end{rSection}
 
@@ -116,13 +130,13 @@
 
 \begin{rSection}{Work Experience}
     \begin{rSubsection}{IBM, Inc}{Taipei, Taiwan}{Application Developer}{June 2018 - Oct. 2018}
-        \item Organized health knowledge collectted from internet using text processing techniques
+        \item Organized health knowledge collected from internet using text processing techniques
         and designed rule-based health information suggestion according to user's information which includes the data from wearable device or entered by user, using Python.
-        \item Implemented backend processing for statistical analysis on collected website user behavior data with Javascript, Python, PHP, MongoDB, MySQL and deployed service on AWS.
+        \item Designed backend infrastructure to collect, analyzed website user behavior data with Javascript, Python, PHP, MongoDB, MySQL and deployed service on AWS.
     \end{rSubsection}
     \begin{rSubsection2}{Application Developer Intern}{Jul. 2017 - Aug. 2017}
         \item Implemented automated optical inspection (AOI) algorithm of defect detection for the label on circuit board 
-        including misprint, broken label,\dots,using Python with OpenCV package.
+        including misprint, broken label,\dots, using Python with OpenCV package.
     \end{rSubsection2}
 \end{rSection}
 
@@ -130,7 +144,7 @@
 %	Teaching and Advising Experience 
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Teaching and Advising Experience}
-    \begin{rSubsection}{Teaching Assistant, \it{National Chiao Tung University}}{Sep. 2016 - Jan. 2018}{}{HsinChu, Taiwan}
+    \begin{rSubsection}{Teaching Assistant, \it{National Chiao Tung University}}{Sep. 2016 - Jan. 2018}{}{Hsinchu, Taiwan}
         \item "Principle of Microcomputer" course taught by Prof. Yi-Ru, Wang \hfill Sep. 2017 - Jan. 2018
         \item "Logic Design and Lab" course taught by Prof. Yi-Ru, Wang \hfill Sep. 2016 - Jan. 2017
     \end{rSubsection}
@@ -145,7 +159,7 @@
 \begin{rSection}{Activities}
     \begin{rSubsection}{2020 Formosa Grand Challenge}{Taipei, Taiwan}{Participant}{Nov. 2019 - Apr. 2020}
         \item Build model and labeled data to solve various Chinese reading comprehension task using Pytorh 
-        and build rule-based dialog system to solve conversation problem with 20 diffierent domains.
+        and build rule-based dialog system to solve conversation problem with 20 different domains.
     \end{rSubsection}
     \begin{rSubsection}{2018 5\ts{th} Pixnet Hackthon}{Taipei, Taiwan}{Participant}{Aug. 2018}
         \item Developed a device and management website for answering popular dishes using Google AIY Voice Kit and information from text mining on 200,000 Pixnet food blogs.
@@ -157,6 +171,9 @@
     \begin{rSubsection2}{Leader of Curriculum-design Section}{Feb. 2015}
         \item Designed curriculum including IR remoter DIY, speaker/microphone DIY and PC building of 1\ts{st} NTPU CE winter camp.
     \end{rSubsection2}
+    \begin{rSubsection}{The International Collegiate Programming Contest}{Jakarta Indonesia}{Participant}{Dec. 2014}
+        \item Placed 29\ts{th} among 70 teams in 2014 ACM-ICPC Asia Jakarta Regional Contest. Solved 4 of 11 problems.
+    \end{rSubsection}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
