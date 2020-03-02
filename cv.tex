@@ -52,6 +52,12 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Hornors and Awards}
+    Research
+    \begin{rSubsection}{}{}{}{}
+    \item {\bf 6\ts{th} Place} (2017) - IJCNLP Shared Task 2~[3] - Taipei, Taiwan
+    \item {\bf Best Paper Award} (2014) - Oriental COCOSDA~[4] - Phuket, Thailand
+    \item {\bf 1\ts{st} Place} (2015) - NTPU CE Senior Project Competition - Taipei, Taiwan
+    \end{rSubsection}
     Academic
     \begin{rSubsection}{}{}{}{}
     \item {\bf Phi Tau Phi Award} (2016) - The Phi Tau Phi Scholastic Honor Society, Taipei Taiwan \\
@@ -59,16 +65,8 @@
     \item {\bf Dean's List} (Fall '12, Fall '15) - NTPU CE Dept. - Taipe, Taiwan
     \item {\bf Scholarship} (2014) - Elytone Electronic CO., LTD. - Taipei, Taiwan
     \item {\bf Honerable Mention} (2014) - Taiwan National Collegiate Programming Contest - Taipei, Taiwan
-    \item {\bf 29\ts{th} Place} (2014) - ACM ICPC Jarkarta Regional - Jarkarta Indonesia
+    %\item {\bf 29\ts{th} Place} (2014) - ACM ICPC Jarkarta Regional - Jarkarta Indonesia
     \end{rSubsection}
-    
-    Research
-    \begin{rSubsection}{}{}{}{}
-    \item {\bf 6\ts{th} Place} (2017) - IJCNLP Shared Task 2~[3] - Taipei, Taiwan
-    \item {\bf Best Paper Award} (2014) - Oriental COCOSDA~[4] - Phuket, Thailand
-    \item {\bf 1\ts{st} Place} (2015) - NTPU CE Senior Project Competition - Taipei, Taiwan
-    \end{rSubsection}
-    
     \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -76,19 +74,24 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Research Experience}
     \begin{rSubsection}{National Chiao Tung University}{Hsinchu, Taiwan}{Graduate Student/Research Assistant, Speech Processing Lab}{Sep. 2016 - Jan. 2019}
-        \item Research Topic: Chinese language model~[1]\\
-        Experimented sequence labeling (TDNN+BLSTM, joint learning with word boundary prediction) and seq2seq (Transformer) model on Chinese pinyin to character problem. Reduced character error rate to 5.6\%.
+        \item Research Topic: Chinese pinyin to character language model using deep learning approach ~[1]\\
+        Experimented sequence labeling (TDNN+BLSTM, joint learning with word boundary prediction) and seq2seq (Transformer) model on Chinese pinyin to character problem. 
+        The training data come from text corpus including wikipedia, LDC Chinese Gigaword, Sinica corpus,\dots through high precision rule-based G2P(character to pinyin) system.
+        Reduced character error rate to 5.6\%.
         \item Dimensional sentiment analysis for Chinese phrases (DSAP)~[3] \\
-        Achieved mean rank 6.5 among 24 submissions on Chinese phrases' valence and arousal prediction problem using modified word2vec and BLSTM model.
+        Achieved mean rank 6.5 among 24 submissions on Chinese phrases' valence and arousal prediction problem using proposed order-awared word2vec and BLSTM model on CAVT(Chinese Valence-Arousal Text) corpus.
         \item Child Speech Impairment Supporting System\\
-        Implemented corpus recording system (for speech impairment child) GUI using Java, in the cooperation project with NTU Hospital Hsinchu. Collected and analyzed about 200 childredn's sample.
-        \item Managed information system and work station for research. \quad {\footnotesize *Arch Linux, Ubuntu...}
+        Implemented corpus recording system (for speech impairment child) GUI using Java, in the cooperation project with NTU Hospital Hsinchu. Collected and analyzed about 200 children's sample.
     \end{rSubsection}
     \begin{rSubsection}{National Taipei University}{Taipei, Taiwan}{Research Assistant, Speech and Multimedia Signal Processing Lab}{Sep. 2012 - June 2016}
         \item Senior project: {\em "An Automatic Grade Input System via Voice"}\\
-        Constructed speech recognition system include voice activity detection and noise canceling (microphone array beamforming) module to enter student's name and score automatically. Obtained 1\ts{st} prize.
+        Constructed speech recognition system including energy-based voice activity detection and beamforming noise cancelation module to enter student's name and score automatically. Obtained 1\ts{st} place in NTPU CE Senior Project Competition.
         \item Mandarin prosody generation~[2][4]\\
-        Investigated the improvement of CRF-based base-phrase chunk feature and punctuation mark feature in Madarin text-to-speech system.
+        Investigated the improvement of CRF-based base-phrase chunk feature and punctuation confidence in Madarin text-to-speech system. 
+        The base-phrase chunk feature is labeled by CRF-based base-phrase chunker 
+        and the punctuation confidence is for each lexical word boundary from inpur text tagged with Chinese word boundary, part of speech (POS) and base-phrase chunk, 
+        measuring the likelihood of inserting a punctuation mark (PM). 
+        These feature are applied in MLP-based prosody generator and the result shows that the RMSE for predicting logF0, syllable duration, energy level and pause duration are all reduced.
     \end{rSubsection}
 \end{rSection}
 
@@ -113,11 +116,12 @@
 
 \begin{rSection}{Work Experience}
     \begin{rSubsection}{IBM, Inc}{Taipei, Taiwan}{Application Developer}{June 2018 - Oct. 2018}
-        \item Organized health knowledge and designed decision tree for health information suggestion project using Python.
-        \item Implemented backend processing for website user behavior statistics with Python, PHP, MongoDB, MySQL and depolyed service on AWS.
+        \item Organized health knowledge collectted from internet using text processing techniques
+        and designed rule-based health information suggestion according to user's information which includes the data from wearable device or entered by user, using Python.
+        \item Implemented backend processing for website user behavior statistics with Python, PHP, MongoDB, MySQL and deployed service on AWS.
     \end{rSubsection}
     \begin{rSubsection}{}{}{Application Developer Intern}{Jul. 2017 - Aug. 2017}
-        \item Implemented AOI algorithm for defect detection using Python including OpenCV package.\quad 
+        \item Implemented automatic optical inspection (AOI) algorithm of defect detection for the label on circuit board including misprint and broken label using Python with OpenCV package.
     \end{rSubsection}
 \end{rSection}
 
