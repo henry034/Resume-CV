@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\newcommand{\ts}{\textsuperscript}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{bibentry}
+\usepackage{enumitem}
+\usepackage{xeCJK}
+\setCJKmainfont[AutoFakeBold=6,AutoFakeSlant=.4]{標楷體}
+
+
+\name{葉瀚允} % Your name
+%\address{123 Broadway \\ City, State 12345} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+\address{henryyeh034@gmail.com, +886-922463510}
+\address{github.com/henry034/}
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{學歷}
+
+{\bf 國立交通大學} \hfill{新竹, 臺灣} \hfill{\em Sep. 2016 - June 2019}
+\begin{itemize} \item {M.S. in Communications Engineering (GPA: 4.02/4.3)} \end{itemize}
+{\bf 國立臺北大學}\hspace*{2em} \hfill{台北, 臺灣} \hfill{\em Sep. 2012 - June 2016}
+\begin{itemize} \item {B.S. in Communications Engineering (Rank: 1\ts{st}, GPA: 3.72/4.0 )} \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Hornors and awards SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{榮譽與獎項}
+    研究
+    \begin{rSubsection}{}{}{}{}
+    \item {\bf 6\ts{th} Place} (2017) - IJCNLP Shared Task 2~[3] - 台北, 臺灣
+    \item {\bf 1\ts{st} Place} (2015) - 臺北大學通訊工程系專題競賽 - Taipei, Taiwan
+    \item {\bf Best Paper Award} (2014) - Oriental COCOSDA~[4] - Phuket, Thailand
+    \end{rSubsection}
+    學術
+    \begin{rSubsection}{}{}{}{}
+    \item {\bf 斐陶斐榮譽會員} (2016) - 中華民國斐陶斐榮譽學會- 台北, 臺灣 
+    \item {\bf 書卷獎} (Fall '12, Fall '15) -臺北大學通訊工程學系 - 台北, 臺灣
+    \item {\bf 獎學金} (2014) - 音律電子股份有限公司 - 台北, 臺灣
+    \item {\bf 佳作} (2014) - 全國大專電腦軟體設計競賽 - 台北, 臺灣
+    \end{rSubsection}
+    \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{研究經歷}
+    \begin{rSubsection}{國立交通大學}{新竹, 臺灣}{碩士/研究助理, 語音處理實驗室}{Sep. 2016 - Jan. 2019}
+        \item 利用深度學習之中文拼音轉文字語言模型 ~[1]
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item 實驗序列標注法（TDNN、BLSTM模型與利用詞邊界特徵聯合訓練）與序列到序列模型（Transformer）於降低音轉字錯誤率之效果
+            \item 使用來自中文維基百科、LDC Chinese Gigaword和中研院語料庫之文字語料，透過基於CRF之斷詞器及規則法之字轉音系統進行前處理，作為訓練語料，實驗結果將字錯誤率下降至5.6\%
+        \end{itemize}\vspace {0.5em}
+        \item 中文片語之維度型情感分析 (DSAP) ~[3] 
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item 結合考慮詞序之詞向量、BLSTM模型與中文情感詞典(Chinese Valence-Arousal Text, CVAT)對片語進行情感維度（強度、正負向）預估，在總共24隊中達到平均6.5名
+        \end{itemize}\vspace {0.5em}
+        \item 兒童語言治療輔助系統
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item 在和台大醫院新竹分院的合作案中利用JAVA實作圖形介面的錄音輔助程式收集並分析約200位正常及語言障礙的兒童語料
+        \end{itemize}\vspace {0.5em}
+    \end{rSubsection}
+    \begin{rSubsection}{國立臺北大學}{台北, 臺灣}{研究助理, 語音及多媒體訊號處理實驗室}{Sep. 2012 - June 2016}
+        \item {\em 《自動化語音成績輸入系統》}
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item 利用C語言實作語音辨識系統，包含基於能量法的語音端點偵測及結合麥克風陣列的波束成型法降噪技術。本專題在當屆台北大學通訊系專題競賽中獲得第一名。
+        \end{itemize}\vspace{0.5em}
+        \item 中文韻律模型~[2][4]
+        \begin{itemize}[label=$-$]
+            \setlength \itemsep{-0.5em}
+            \item 採用基於CRF模型的基礎片語特徵和標點符號信心指數來改善中文文字轉語音系統
+            \item 透過基於CRF模型的標注器得到句子中的基礎片語特徵
+            \item 將輸入語句利用CRF模型進行詞性標注器及詞邊界預估，進而訓練標點符號信心指數
+            \item 將上述特徵參數引入基於MLP的韻律產生系統所預估的logF0、音節長度、能量階級、暫停長度，RMSE皆有下降
+        \end{itemize}\vspace{0.5em}
+    \end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+    \nobibliography{bib/mybib}
+    \bibliographystyle{unsrt}
+    
+    \begin{enumerate}[label={[\arabic*]}]
+    \item \bibentry{yeh2019}
+    \item \bibentry{chiang2019punctuation}
+    \item \bibentry{lee2017nctu}
+    \item \bibentry{hung2014investigation}
+    \end{enumerate}    
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{工作經歷}
+    \begin{rSubsection}{IBM, Inc}{台北, 臺灣}{Application Developer}{June 2018 - Oct. 2018}
+        \item 從利用文字處理技術自動化整理網路上的健康資訊，並使用Python設計根據使用者資訊（包含穿戴式裝置等）及規則法的健康推薦系統
+        \item 實作網站使用者行為追蹤統計系統的相關API，使用的工具包含JavaScript, Python, PHP, MongoDB, MySQL，並部署服務於AWS
+    \end{rSubsection}
+    \begin{rSubsection2}{Application Developer Intern}{Jul. 2017 - Aug. 2017}
+        \item 使用Python及OpenCV函式庫實作自動光學檢測系統，並結合CNN模型檢測電路板標籤瑕疵
+    \end{rSubsection2}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Teaching and Advising Experience 
+%----------------------------------------------------------------------------------------
+\begin{rSection}{教學經歷}
+    \begin{rSubsection}{助教 \it{國立交通大學}}{Sep. 2016 - Jan. 2018}{}{新竹, 臺灣}
+        \item 《微處理機系統語實驗》 王逸如教授 \hfill Sep. 2017 - Jan. 2018
+        \item 《邏輯設計與實作》 王逸如教授 \hfill Sep. 2016 - Jan. 2017
+    \end{rSubsection}
+    \begin{rSubsection}{助教 \it{國立臺北大學}}{Feb. 2015 - June 2016}{}{台北, 台灣}
+        \item 《物理實驗》 江振宇教授 \hfill Feb. 2015 - June 2016
+    \end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Activities
+%----------------------------------------------------------------------------------------
+\begin{rSection}{其他活動}
+    \begin{rSubsection}{2020 科技大擂台 Formosa Grand Challenge}{台北, 臺灣}{參賽者}{Nov. 2019 - Apr. 2020}
+        \item 標注資料與使用Pythorch建立深度模型來解決多種中文閱讀理解問題；設計規則法之對話系統對應20種不同場域
+        \item 最終獲第三名及30萬獎金
+    \end{rSubsection}
+    \begin{rSubsection}{第五屆痞客幫黑客松}{台北, 臺灣}{參賽者}{Aug. 2018}
+        \item 在200,000篇部落格食記中利用文字探勘技術統計熱門菜餚，並實作網頁系統結合Google AIY VoiceKit進行店家美食推薦
+    \end{rSubsection}
+    \begin{rSubsection}{臺北大學通訊系學會}{台北, 臺灣}{資訊部長}{Sep. 2013 - June 2015}
+        \item 管理學生資訊系統與製作系學會活動文宣
+        \item 建立新生選課、活動須知文件
+    \end{rSubsection}
+    \begin{rSubsection2}{學術部長}{Feb. 2015}
+        \item 設計寒假營隊課程，包含DIY紅外線遙控器、手做麥克風/喇叭、客製化電腦組裝
+    \end{rSubsection2}
+    \begin{rSubsection}{ACM國際大學生程序設計競賽}{雅加達, 印尼}{參賽者}{Dec. 2014}
+        \item 在2014 ACM-ICPC Asia Jakarta Regional Contest中於70支隊伍中獲得第29名
+    \end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{技術工具}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Python, C, Java, Javascript, PHP \\
+Databases & MySQL, PostgreSQL \\
+Frameworks & TensorFlow, Pytorch \\
+Package & OpenCV \\
+Cloud service & AWS
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
