@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume_short} % Use the custom resume.cls style
+\newcommand{\ts}{\textsuperscript}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{bibentry}
+\usepackage{enumitem}
+
+\name{Han-Yun(Henry) Yeh} % Your name
+%\address{123 Broadway \\ City, State 12345} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+\address{hanyuny@andrew.cmu.edu \\ 341-3147855}
+%\address{github.com/henry034/}
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+    \begin{rSubsection3}{ Carnegie Mellon University}{Silicon Valley, CA}{Feb. 2021 - Dec. 2022}
+        \item {M.S. in Software Engineering}
+    \end{rSubsection3}
+    \begin{rSubsection3}{ National Chiao Tung University}{Hsinchu, Taiwan}{Sep. 2016 - June 2019}
+        \item {M.S. in Communications Engineering (GPA: 4.02/4.3)}
+    \end{rSubsection3}
+    \begin{rSubsection3}{ National Taipei University}{Taipei, Taiwan}{Sep. 2012 - June 2016}
+        \item {M.S. in Communications Engineering (Rank: 1\ts{st}, GPA: 3.72/4.0 )}
+    \end{rSubsection3}
+%{\bf Carnegie Mellon University} \hfill{Silicon Valley, CA} \hfill{\em Feb. 2021 - Dec. 2022}
+%\begin{itemize} \item {M.S. in Software Engineering} \end{itemize}
+%{\bf National Chiao Tung University} \hfill{Hsinchu, Taiwan} \hfill{\em Sep. 2016 - June 2019}
+%\begin{itemize} \item {M.S. in Communications Engineering (GPA: 4.02/4.3)} \end{itemize}
+%{\bf National Taipei University}\hspace*{2em} \hfill{Taipei, Taiwan} \hfill{\em Sep. 2012 - June 2016}
+%\begin{itemize} \item {B.S. in Communications Engineering (Rank: 1\ts{st}, GPA: 3.72/4.0 )} \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+    \begin{rSubsection3}{Novatek, Inc}{Software Firmware Engineer}{Aug 2020 - June 2021}
+        \item Integrated IC verification report generator for audio/DSP part of latest SmartTV SoC IC.
+        \item Optimizied DTS audio algorithm with Tensilia Hifi2/Hifi4 DSP processor.
+    \end{rSubsection3}
+
+    \begin{rSubsection3}{IBM, Inc}{Application Developer}{June 2018 - Oct. 2018}
+        \item Constructed rule-based health information suggestions system using user's information from wearable devices and health knowledge from the internet
+        \item Designed a backend infrastructure to collect and analyze website user behavior by means of JavaScript, Python, PHP, MongoDB, MySQL and deployed service on AWS
+    \end{rSubsection3}
+    \begin{rSubsection3}{IBM, Inc}{Application Developer Intern}{Jul. 2017 - Aug. 2017}
+        \item Implemented an automated optical inspection (AOI) algorithm to 
+              detect defects in circuit board labels using Python with OpenCV
+    \end{rSubsection3}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Experience}
+    \begin{rSubsection3}{National Chiao Tung University}{RA @ Speech Processing Lab}{Sep. 2016 - Jan. 2019}
+        \item Developed LSTM/Seq2Seq/Transformer based Mandarin pinyin to character language model  
+        \item Quantified LSTM based Dimensional sentiment analysis for Chinese phrases
+        \item Established Child Speech Impairment Supporting System UI using Java
+    \end{rSubsection3}
+    \begin{rSubsection3}{National Taipei University}{RA @ Signal Processing Lab}{Sep. 2012 - June 2016}
+        \item Implemented Speech recognition system that featured energy-based voice activity detection and a beam-forming noise cancellation module to enter student’s grades automatically.
+        \item Surveyed Mandarin prosody generation using CRF-based base-phrase chunk features and puctuation confidence for Madarin text to speech system
+    \end{rSubsection3}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Hornors and awards SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Hornors and Awards}
+    \begin{list}{$\cdot$}{\leftmargin=1.5em}
+        \itemsep -0.5em \vspace{-0.25em} % Compress items in list together for aesthetics
+        \item {\bf 6\ts{th} Place} (2017) - IJCNLP Shared Task 2~[3] - Taipei, Taiwan
+        \item {\bf 1\ts{st} Place} (2015) - NTPU CE Senior Project Competition - Taipei, Taiwan
+        \item {\bf Best Paper Award} (2014) - Oriental COCOSDA~[4] - Phuket, Thailand
+    \end{list}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+%\begin{rSection}{Publications}
+%    \nobibliography{bib/mybib}
+%    \bibliographystyle{unsrt}
+%    
+%    \begin{enumerate}[label={[\arabic*]}]
+%    \item \bibentry{yeh2019}
+%    \item \bibentry{chiang2019punctuation}
+%    \item \bibentry{lee2017nctu}
+%    \item \bibentry{hung2014investigation}
+%    \end{enumerate}    
+%\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & Python, C, Java, Javascript, PHP \\
+Web Technologies & Bootstrap, jQuery, Nodejs, Express, SQL, NoSQL \\
+Frameworks and Tools & TensorFlow, PyTorch, OpenCV , Git, Vim\\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
