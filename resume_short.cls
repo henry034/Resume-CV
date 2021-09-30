@@ -98,13 +98,14 @@
   \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
   \hrule % Horizontal line
+  \vspace{-0.25em}
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Margin within the section
   }
   \item[]
-
 }{
   \end{list}
+  \vspace{-0.25em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
@@ -133,11 +134,12 @@
 }
 \newenvironment{rSubsection3}[3]{
   {\bf #1} \hfill {\bf #2} \hfill {\em #3}\smallskip
+  \vspace{-0.5em}
   \begin{list}{$\cdot$}{\leftmargin=1.5em} % \cdot used for bullets, no indentation
-    \itemsep -0.25em \vspace{-0.5em} % Compress items in list together for aesthetics
+    \itemsep -0.75em \vspace{-0.5em} % Compress items in list together for aesthetics
    }{
    \end{list}
-   \vspace{0em} % Some space after the list of bullet points
+   \vspace{-0.5em} % Some space after the list of bullet points
 }
 
 
