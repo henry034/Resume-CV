@@ -1,0 +1,114 @@
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%Version for spanish users, by dgarhdez
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Han-Yun (Henry)}{Yeh}
+\title{Cover letter}                               % optional, remove / comment the line if not wanted
+\address{3252 Geneva Drive}{Santa Clara, 95051 CA}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1-341-314-7855}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{hanyuny@andrew.cmu.edu}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{\ }{}
+\date{\today}
+\opening{To Whom It May Concern // Specific person,}
+\closing{Best,}
+%\enclosure[Adjunto]{CV}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+% First paragraph will be customized for each company
+I am writing this letter to express my interest in your posting on LinkedIn for the [OOOO] position at [company name]. 
+I am a graduate student at Carnegie Mellon University majoring in Software Engineering 
+and I'm very excited about combining my technical skills in
+
+% customized for company
+web development/xxx/xxx/xxx with the project of your team.
+
+% Second paragraph
+At CMU, I developed a COVID-19 emergency communication social network with my team using HTML/CSS, Pug, Bootstrap, JavaScript
+(jQuery) as frontend, and Node.js (express), MongoDB as backend. 
+I was responsible for implementing the backend functionality, some frontend behavior, 
+and refactoring code when necessary. 
+And we applied several software engineering practices such as Agile, unit tests,
+CI/CD, design pattern for this project. 
+
+Besides, I coordinated with my teammate across different time zone and everything ran smoothly since we had good communications, 
+strick time scheduling and flexible work load balancing. 
+Everyone could support each other. 
+I am confident my passion of software engineering and teamwork skills make me an excellent match for this position.
+
+
+% Third
+I understand that capability of learning new technologies is a very important asset to be a software engineer.
+Based on my previous working and research experience, I have a diverse background such as system software/firmware and machine learning (focus on speech processing) besides software engineering.
+In Novatek Microelectronics, I improved the verification report generator of television IC, audio driver, and optimized DTS sound effect algorithm with DSP processor solving the trade off of accuracy and efficiency.
+And during my bachelor and master degree research, I digged into speech processing and study for Mandarin language model and speech recognition.
+These experiences show that the solid knowledge I have allows me to switch to different roles. 
+I am willing to do any new attempts and am able to make good use of previous knowledge.
+
+I am highly motivated to contribute my passion, broad knowledge and software engineering skills through this position.
+Thank you for your time and consideration. 
+I look forward to discussing my qualifications with you in the near future. 
+I can be reached at 341-314-7855 or by email at hanyuny@andrerw.cmu.edu.
+
+
+
+
+
+
+
+
+
+
+
+\vspace{0.5cm}
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
